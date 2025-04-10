@@ -42,6 +42,7 @@ wget --quiet --no-check-certificate \
     --header="User-Agent: $USER_AGENT" \
     --load-cookies "$COOKIE_JAR" \
     --post-data="$FORM_DATA" \
+    --server-response
    "$LOGIN_URL" -O "$POST_RESPONSE"
 
 # Extract magic number after login to verify with initial one 
